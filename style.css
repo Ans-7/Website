@@ -1,0 +1,131 @@
+@font-face {
+    font-family:myFont;
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+
+html{
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display:flex;
+    justify-content: space-between;
+    height: 110vh;
+    background-color: transparent;
+    font-family: myFont;
+}
+
+nav{
+    margin-top: 0.5vh;
+    font-size: 1.85vh; 
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 1vh;
+    background-color: transparent;
+    height: fit-content;
+}
+
+nav a{
+    height: fit-content;
+    text-decoration: none;
+    color: white;
+    padding: 2vh;
+    background-color: transparent;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    background-color:transparent ;
+    color: black;
+    padding: 2vh;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10vh;
+}
+
+.content{
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    position:absolute;
+    top: 35%;
+    z-index: -1;
+}
+
+.shop{
+    font-size: 1.5vh;
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+.logo{
+    position: relative;
+    right: 47%;
+    padding: 0.5vh;
+    font-size: 3.5vh;
+    color: white;
+}
+
+.logo:hover{
+    color: black;
+}
+
+.bgvideo{
+    padding: 0;
+    margin: 0;
+    position:absolute;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.sidebar{
+    width: 100%;
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    box-shadow: -10px 0px 10px rgb(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.side{
+    display: flex;
+    font-size: x-large;
+    text-decoration: none;
+    margin-top: 5%;
+}
+
+.burgerMenu{
+    color: black;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 2vh;
+    display:none;
+}
+
+@media(max-width:964px){
+    .hideOnMobile{
+        display: none;
+    }
+    .burgerMenu{
+        display: block;
+    }
+}

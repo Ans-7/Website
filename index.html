@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fear of God</title>
+</head>
+<body>
+    <video autoplay loop muted plays-inline src="fonts/VID_20241117_124001.mp4" class="bgvideo"></video>
+    <div class="content">
+        <h1>COLLECTION 8 <br> AMERICAN SYMPHONY</h1>
+        <a href="" class="shop">shop</a>
+    </div>
+        <nav class="sidebar">
+            <a onclick=hideSidebar() href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            <a href="" class="side">fear of god</a>
+            <a href=""class="side" >essentials</a>
+            <a href="" class="side">athletics</a>
+            <a href="" class="side"> search </a>
+            <a href="" class="side"> account </a>
+            <a href="" class="side"> bag </a>
+        </nav>
+
+        <a class="burgerMenu" onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="25px" fill="#fff"><path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a>
+        
+        <nav>
+            <a href="" class="hideOnMobile">fear of god</a>
+            <a href="" class="hideOnMobile">essentials</a>
+            <a href="" class="hideOnMobile">athletics</a>
+            <a href="" class="hideOnMobile">sale</a>
+        </nav>
+        
+        <a href=""><div class="logo">FEAR OF GOD</div></a>
+        
+        <nav>
+            <a href="" class="hideOnMobile"> search </a>
+            <a href="" class="hideOnMobile"> account </a>
+            <a href="" class="hideOnMobile"> bag </a>
+        </nav>
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+    </div>
+</body>
+</html>
